@@ -1,0 +1,48 @@
+{
+  "_from": "compare-fonts",
+  "_id": "compare-fonts@0.2.4",
+  "_inBundle": false,
+  "_integrity": "sha1-k93k+ztzFXKxOUnbF3uGFXvCR8k=",
+  "_location": "/compare-fonts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "compare-fonts",
+    "name": "compare-fonts",
+    "escapedName": "compare-fonts",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/compare-fonts/-/compare-fonts-0.2.4.tgz",
+  "_shasum": "93dde4fb3b731572b13949db177b86157bc247c9",
+  "_spec": "compare-fonts",
+  "_where": "/Users/andreybaskirtcev/Work/FontsScript/src",
+  "bundleDependencies": false,
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "opentype.js": "^0.7.2",
+    "shuffle-array": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "Defines visual similarity of fonts and calculates CSS properties for better similarity",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-jsx-a11y": "^5.0.3"
+  },
+  "main": "lib/compare-fonts.js",
+  "name": "compare-fonts",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "test": "eslint ./src"
+  },
+  "version": "0.2.4"
+}
