@@ -1,10 +1,10 @@
 import compareFonts from './lib/compare-fonts';
 
-const folder = '/Users/andreybaskirtcev/Work/FontsScript/src/regularFonts/'
+const folder = '/Users/andreybaskirtcev/Work/FontsScript/src/fonts/'
 
-functionName()
+main()
 
-async function functionName() {
+async function main() {
 
   var result = {}
   var fs = require('fs');
@@ -34,7 +34,16 @@ async function functionName() {
 
     result[firstFontName] = array
 
-    console.log(result);
+
+    var json = JSON.stringify(result)
+
+    console.log(json);
+
+    if (index === 2) {
+      break
+    }
+
+    fs.writeFile('myjsonfile.json', json, 'utf8', function(error) { });
   }
 }
 
